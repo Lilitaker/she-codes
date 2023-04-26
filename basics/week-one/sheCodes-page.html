@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics-Week1</title>
+    <style>
+      body {
+        background-color: #f6f2fe;
+      }
+
+      h1.title {
+        color: #875df1;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+
+      h2.subtitle {
+        color: #272044;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 500;
+      }
+
+      .btn {
+        margin: 15px;
+        padding: 15px 25px;
+        background-color: #f6f2fe;
+        border: 1px solid #885df1;
+        border-radius: 25px;
+        box-shadow: 5px 7px 12px rgba(39, 32, 68, 0.5);
+        color: #885df1;
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .btn:hover {
+        background-color: #885df1;
+        color: #f6f2fe;
+        cursor: pointer;
+      }
+
+      ul.list-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      li {
+        margin: 0 20px;
+      }
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .coders-link {
+        color: blue;
+      }
+
+      .courses-link {
+        color: red;
+      }
+
+      .stories-link {
+        color: green;
+      }
+
+      .footer-contact {
+        margin: 20px 0;
+      }
+
+      .footer-span {
+        color: #885df1;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      .center-inline {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title center-text">SheCodes</h1>
+    <h2 class="subtitle center-text">Coding Workshop</h2>
+    <button class="btn center-inline">Apply now</button>
+    <ul class="list-container">
+      <li>
+        <a
+          href="https://www.shecodes.io/students"
+          target="_blank"
+          title="Coders page"
+          class="coders-link"
+          >Coders</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.shecodes.io/workshops"
+          target="_blank"
+          title="Courses page"
+          class="courses-link"
+          >Courses</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.shecodes.io/stories"
+          target="_blank"
+          title="Stories page"
+          class="stories-link"
+          >Stories</a
+        >
+      </li>
+    </ul>
+    <hr />
+    <p class="center-text">
+      <strong>More info</strong>
+    </p>
+    <img
+      class="woman-coding-img center-inline"
+      src="https://images.unsplash.com/photo-1600267147646-33cf514b5f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=847&q=80"
+      alt="Woman coding"
+      width="400"
+    />
+    <div class="footer-contact center-text">
+      <small
+        ><span class="footer-span">Email: </span>hello@shecodes.io
+        <span class="footer-span">Instagram: </span>@shecodes.io</small
+      >
+    </div>
+  </body>
+</html>

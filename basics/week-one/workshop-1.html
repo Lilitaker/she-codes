@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop Week 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 10px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      h1.title {
+        margin: 0 0 10px;
+        color: #1a64d6;
+        font-size: 35px;
+      }
+
+      h2.subtitle {
+        color: #1e1e1e;
+        font-size: 30px;
+        font-weight: 200;
+      }
+
+      ul.forecast-container {
+        margin: 40px;
+        list-style: none;
+      }
+
+      ul.forecast-container li {
+        margin: 0 auto;
+        padding: 35px;
+        width: 500px;
+      }
+
+      ul.forecast-container li:hover {
+        background-color: #fffbef;
+      }
+
+      ul.forecast-container li > h3 {
+        margin: 0 0 20px;
+      }
+
+      .btn {
+        padding: 20px 30px;
+        margin: 0 0 25px;
+        border: 1px solid #1a64d6;
+        border-radius: 30px;
+        background-color: #1a64d6;
+        box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.3);
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .btn:hover {
+        background-color: #fff;
+        color: #1a64d6;
+      }
+
+      .courier-family {
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">
+      🌤 <br />
+      Currently 21° in Tokyo
+    </h1>
+    <h2 class="subtitle">13° / <strong>23°</strong></h2>
+    <ul class="forecast-container courier-family">
+      <li>
+        <h3>🌧 Tomorrow</h3>
+        <p>10° / <strong>22°</strong></p>
+      </li>
+      <li>
+        <h3>⛅ Saturday</h3>
+        <p>15° / <strong>17°</strong></p>
+      </li>
+      <li>
+        <h3>🌞 Sunday</h3>
+        <p>25° / <strong>28°</strong></p>
+      </li>
+    </ul>
+    <button class="btn">Change city</button>
+    <p class="courier-family">Coded by Liliana Vasquez 👩‍💻</p>
+  </body>
+</html>
