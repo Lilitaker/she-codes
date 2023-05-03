@@ -7,27 +7,25 @@
     <title>Greek Yogurt</title>
     <style>
         body {
+            width: 50%;
+            height: 100vh;
             padding: 0;
-            margin: 0;
+            margin: 60px auto 20px;
             box-sizing: border-box;
-        }
-
-        .container {
-            max-width: 600px;
-            padding: 30px 60px;
-            margin: 0 auto;
+            background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+            color: #fff;
+            font-family: 'Cerebri Sans', Arial, Helvetica, sans-serif;
         }
 
         h1 {
-            color: #7d51e8;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            padding: 20px;
+            color: #fff;
             text-align: center;
         }
 
         h2 {
-            padding: 15px;
-            border: 1px solid #7d51e8;
-            border-radius: 4px;
-            font-size: 18px;
             text-align: center;
         }
 
@@ -35,69 +33,59 @@
             display: block;
             margin: 0 auto;
             max-width: 100%;
-            border-radius: 10px;
+            border-radius: 4px;
         }
 
         p {
-            margin: 20px 0 10px;
-            font-size: 13px;
+            font-size: 24px;
             line-height: 1.5;
-        }
-
-        .learn-more {
-            color: #7d51e8;
-            font-size: 12px;
-            text-decoration: none;
-        }
-
-        .learn-more:hover {
-            text-decoration: underline;
         }
 
         button {
             display: block;
-            padding: 15px 20px;
-            margin: 20px auto;
+            padding: 10px 20px;
+            margin: 30px auto 10px;
             border: none;
-            border-radius: 6px;
-            background-color: #7d51e8;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.87);
+            box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
             color: #fff;
-            font-size: 18px;
-            transition: all 200ms ease-in-out;
+            cursor: pointer;
+            font-size: 20px;
+            opacity: 1;
+            text-transform: uppercase;
+            transition: opacity 150ms ease;
         }
 
         button:hover {
-            cursor: pointer;
             opacity: 0.9;
         }
 
-        .footer {
-            text-align: center;
+        a {
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>I love Yogurt! 🥛</h1>
-        <h2>Especially Greek Yogurt</h2>
-        <img src="https://motionarray.imgix.net/preview-765107-WbyhwjBf2j9fnHqi-large.jpg?w=660&q=60&fit=max&auto=format" alt="Greek Yogurt" />
-        <p>Greek yogurt is a protein-rich dairy product with a variety of culinary uses. It’s an excellent source of a number of nutrients and may even offer a few health benefits. However, it’s important to choose the right type of Greek yogurt, as many can be packed with additives like added sugar.
-        </p>
-        <a class="learn-more" href="https://en.wikipedia.org/wiki/Strained_yogurt" target="_blank">Learn more on Wikipedia</a>
-        <button class="buy-btn">👉 Buy Greek Yogurt</button>
-        <p class="footer">This page was built by <a href="" target="_blank">Liliana Vasquez</a></p>
-    </div>
+    <h1>I love Yogurt! 🥛</h1>
+    <h2>Especially Greek Yogurt</h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/231/original/greek-yogurt.jpg?1683120591" alt="Greek Yogurt" />
+    <p><strong>Greek yogurt</strong> is a protein-rich dairy product with a variety of culinary uses. It’s an excellent source of a number of nutrients and may even offer a few health benefits. However, it’s important to choose the right type of Greek yogurt, as many can be packed with additives like <em>added sugar</em>.
+    </p>
+    <small><a class="learn-more" href="https://en.wikipedia.org/wiki/Strained_yogurt" target="_blank">Learn more on Wikipedia</a></small>
+    <button class="btn">Try Greek Yogurt</button>
     <script>
         function buy() {
             let name = prompt('What is your name?');
-            let email = prompt('What is your email?');
-            let emoji = prompt('What is your favorite emoji?');
-            alert(`Thank you ${name}! We'll be in touch by email, meanwhile have lot of yogurt! ${emoji}`);
+            if(name.length) {
+                alert(`Thanks, ${name}! We'll be in touch. Meanwhile, have lot of yogurt!`);
+            }else {
+                alert('No name, no Greek Yogurt for you!');
+            }
         }
         
-        let buyBtn = document.querySelector('.buy-btn');
-        buyBtn.addEventListener('click', buy);
+        let btn = document.querySelector('.btn');
+        btn.addEventListener('click', buy);
     </script>
 </body>
 </html>
